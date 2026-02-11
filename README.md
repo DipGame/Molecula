@@ -1,1 +1,12 @@
-# Molecula
+https://dipgame.github.io/CentTalants/ 
+https://dipgame.github.io/CentTalants/about.html
+https://dipgame.github.io/CentTalants/doctor-detail.html
+https://dipgame.github.io/CentTalants/doctors.html
+https://dipgame.github.io/CentTalants/equipment.html
+https://dipgame.github.io/CentTalants/equipment-detail.html
+https://dipgame.github.io/CentTalants/i_want.html
+https://dipgame.github.io/CentTalants/news.html
+https://dipgame.github.io/CentTalants/price.html
+https://dipgame.github.io/CentTalants/service_detail.html
+https://dipgame.github.io/CentTalants/service_level_1.html
+https://dipgame.github.io/CentTalants/stocks.html

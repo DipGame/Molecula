@@ -1,0 +1,182 @@
+.main-about {
+    margin-bottom: 100px;
+    display: flex;
+    border: 1px solid #979085;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.service-detail-about {
+    align-items: center;
+}
+
+.main-about-left {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: 32px;
+    flex-direction: column;
+
+    .h2 {
+        margin-bottom: 32px;
+    }
+
+    .default {
+        margin: 0 0 32px;
+    }
+
+    .button:not(.service-about-left .button) {
+        max-width: 182px;
+        min-height: 50px;
+        background: none;
+        border: 1px solid #C4C5BF;
+        color: var(--text-color);
+        margin-top: auto;
+
+        &:hover {
+            background-color: #00D0BA;
+            color: #FFF;
+            border: 1px solid #00D0BA;
+        }
+    }
+}
+
+.service-about-left {
+    width: -webkit-fill-available;
+
+    .h2 {
+        font-size: 40px;
+    }
+
+    .default {
+        margin: 0 0 32px;
+
+        ul {
+            margin-left: 10px;
+            gap: 15px;
+        }
+    }
+
+    .button {
+        max-width: 156px;
+        margin-top: auto;
+
+        &:hover {
+            color: #FFF;
+        }
+    }
+}
+
+.mainAboutSwiper {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 736px;
+}
+
+.service-about {
+
+    .mainAboutSwiper {
+        min-height: 652px;
+        max-width: none;
+        width: -webkit-fill-available;
+    }
+}
+
+.service-detail-about {
+
+    .mainAboutSwiper {
+        min-height: auto;
+        max-height: none;
+        margin-right: 32px;
+
+    }
+
+    .main-about-item {
+        min-height: 561px;
+        max-height: 561px;
+        border-radius: 10px;
+    }
+}
+
+.main-about-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 970px) {
+    .main-about {
+        flex-direction: column;
+    }
+
+    .main-about-left,
+    .mainAboutSwiper {
+        max-width: none;
+    }
+
+    .service-detail-about {
+        .mainAboutSwiper {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .main-about-section {
+        padding: 0;
+    }
+
+    .main-about {
+        padding: 24px 16px 16px;
+        margin-bottom: 40px;
+    }
+
+    .main-about-left {
+        padding: 0;
+        margin-bottom: 32px;
+    }
+
+    .main-about-item {
+        border-radius: 10px;
+    }
+
+    .service-about {
+        .h2 {
+            font-size: 24px;
+            line-height: 120%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .mainAboutSwiper {
+        min-height: auto;
+        aspect-ratio: 342/420;
+    }
+
+    .service-about {
+
+        .mainAboutSwiper {
+            min-height: auto;
+            aspect-ratio: 343/354;
+        }
+    }
+
+    .service-detail-about {
+        .mainAboutSwiper {
+            min-height: auto;
+            aspect-ratio: 343/334   ;
+        }
+
+        .main-about-item {
+            min-height: auto;
+            max-height: none;
+        }
+    }
+}

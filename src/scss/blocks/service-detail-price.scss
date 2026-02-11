@@ -1,0 +1,72 @@
+.service-detail-price {
+    padding: 100px 0;
+
+    .h2 {
+        margin-bottom: 32px;
+    }
+}
+
+.service-detail-price-list {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 8px 24px;
+}
+
+.service-detail-price-list-item:not(:last-child) {
+    border-bottom: 1px solid #C4C5BF80;
+}
+
+.service-detail-price-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 24px;
+    padding: 20px 0;
+}
+
+.service-detail-price-list-item-title {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.service-detail-price-list-item-price {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+
+    .service-detail-price-section {
+        padding: 0;
+    }
+
+    .service-detail-price {
+        padding: 60px 0;
+
+        .h2 {
+
+            padding: 0 var(--def-padding);
+        }
+    }
+
+    .service-detail-price-list {
+        padding: 8px 16px;
+    }
+
+    .service-detail-price-list-item-title {
+        font-size: 16px;
+    }
+
+    .service-detail-price-list-item-price {
+        font-size: 16px;
+    }
+}

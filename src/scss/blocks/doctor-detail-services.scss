@@ -1,0 +1,50 @@
+.doctor-detail-services {
+    padding: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .h2 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 40px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0px;
+    }
+}
+
+.doctor-detail-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    .main-services-item {
+        max-width: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .doctor-detail-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 970px) {
+    .doctor-detail-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .doctor-detail-services {
+        .h2 {
+            font-size: 32px;
+            line-height: 100%;
+        }
+    }
+    .doctor-detail-services-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+}

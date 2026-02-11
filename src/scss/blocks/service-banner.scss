@@ -1,0 +1,149 @@
+.main-banner-section {
+    overflow: hidden;
+}
+
+.serviceBannerSwiper {
+    width: 100%;
+    background-color: #F0E3D5;
+
+    .swiper-slide {
+        height: auto;
+        min-height: 533px;
+
+        .padding {
+            height: 100%;
+        }
+
+        .def_div {
+            padding: 120px 0 107px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+            width: 100%;
+
+            .service-banner-cont {
+                width: 100%;
+
+                .button {
+                    max-width: 228px;
+                    min-height: 50px;
+                    margin-top: 48px;
+                }
+            }
+        }
+    }
+}
+
+.service-banner-img {
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+    object-position: center;
+    max-width: 860px;
+    right: 0;
+    transform: translateX(25%);
+    z-index: -1;
+    height: 100%;
+
+}
+
+.service-banner-subtitle {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: var(--link-color);
+}
+
+.service-banner-title {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    leading-trim: NONE;
+    line-height: 72px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.service-banner-price {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    leading-trim: NONE;
+    line-height: 72px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    span {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 44px;
+        leading-trim: NONE;
+        line-height: 72px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: line-through;
+        color: #33333380;
+    }
+}
+
+@media (max-width: 970px) {
+    .service-banner-img {
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 720px) {
+    .serviceBannerSwiper .swiper-slide {
+        min-height: 400px;
+    }
+    
+    .serviceBannerSwiper {
+        .swiper-slide {
+            .def_div {
+                padding: 120px 0;
+                .service-banner-cont {
+                    .button {
+                        max-width: 212px;
+                        min-height: 50px;
+                        margin-top: 32px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .service-banner-img {
+        transform: translateX(52%);
+    }
+    
+    .service-banner-subtitle {
+        font-size: 18px;
+        line-height: 120%;
+    }
+    
+    .service-banner-title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    
+    .service-banner-price {
+        font-size: 24px;
+        line-height: 120%;
+    
+        span {
+            font-size: 24px;
+            line-height: 120%;
+            color: #33333380;
+        }
+    }
+}

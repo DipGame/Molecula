@@ -1,0 +1,65 @@
+.service-detail-before-after {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 50px;
+
+    .h2 {
+        text-align: center;
+    }
+}
+
+.service-detail-before-after-section {
+    overflow: hidden;
+    
+}
+
+.before-after-item {
+    aspect-ratio: 481/500;
+    width: 100%;
+    max-width: 481px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sw_cont_before-after {
+
+    .sw-btn {
+        left: 12%;
+    }
+
+    .sw-btn.sw-next-btn {
+        right: 12%;
+        left: auto;
+    }
+}
+
+.about-foto-clinic {
+    padding: 60px 0;
+}
+
+@media (max-width: 720px) {
+    .service-detail-before-after {
+        gap: 32px;
+        padding-top: 60px;
+    }
+    
+    .before-after-item {
+        aspect-ratio: 289/300;
+        max-width: 289px;
+    }
+    
+    .sw_cont_before-after {
+
+        padding-bottom: 32px;
+
+        .sw-btn {
+            display: none;
+        }
+    }
+
+    .about-foto-clinic {
+        padding: 50px 0;
+    }
+}

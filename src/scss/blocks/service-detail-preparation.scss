@@ -1,0 +1,18 @@
+.service-detail-preparation {
+    padding: 100px 0;
+
+    .h2 {
+        margin-bottom: 32px;
+    }
+}
+
+.service-detail-preparation-list {
+    margin: 0;
+    gap: 24px;
+}
+
+@media (max-width: 720px) {
+    .service-detail-preparation {
+        padding: 60px 0;
+    }
+}

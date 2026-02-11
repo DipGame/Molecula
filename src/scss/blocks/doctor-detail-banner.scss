@@ -1,0 +1,125 @@
+.doctor-detail-banner {
+    padding: 30px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.doctor-detail-banner-left {
+    max-width: 816px;
+}
+
+.doctor-detail-banner-left-prof {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-top: 20px;
+}
+
+.doctor-detail-banner-left-skill {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #979085;
+}
+
+.doctor-detail-banner-left-text {
+    margin-top: 40px;
+    margin-bottom: 0;
+    gap: 0;
+}
+
+.doctor-detail-banner-left-text-title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #979085;
+}
+
+.doctor-detail-banner-left-text-list {
+    padding-left: 0 !important;
+    gap: 16px !important;
+
+    li {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &::before {
+            content: '';
+            max-width: 15px;
+            max-height: 15px;
+            min-height: 15px;
+            min-width: 15px;
+            background-image: url('./../img/sparkle.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.doctor-detail-banner-right-img {
+    aspect-ratio: 416/551;
+    width: 100%;
+    max-width: 416px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    background-color: #DBDBDB;
+}
+
+@media (max-width: 1280px) {
+    .doctor-detail-banner-left {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 970px) {
+    .doctor-detail-banner {
+        flex-direction: column-reverse;
+    }
+
+    .doctor-detail-banner-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .doctor-detail-banner-left {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .doctor-detail-banner {
+        padding: 16px 0 60px;
+        gap: 20px;
+    }
+    
+    .doctor-detail-banner-left-text {
+        margin-top: 24px;
+    }
+    
+    .doctor-detail-banner-left-text-title {
+        margin-bottom: 24px;
+    }
+    
+}

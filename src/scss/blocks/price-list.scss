@@ -1,0 +1,233 @@
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 72px;
+}
+
+.price-list-item-list-accordion {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 0 24px;
+
+    .price-list-item-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .price-list-item-list-item-title {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    .price-list-item-list-item-code {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    .price-list-item-list-item-price {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+}
+
+
+.price-list-item-list-accordion-title {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 8px 0;
+    min-height: 53px;
+
+    svg {
+        max-width: 32px;
+        max-height: 32px;
+        min-height: 32px;
+        min-width: 32px;
+    }
+
+    .h3 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 32px;
+        letter-spacing: 0%;
+    }
+
+    &.active {
+        svg {
+            .hidden {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+[data-accordion-item].active [data-accordion-toggle] svg {
+    transform: rotate(360deg);
+}
+
+
+.price-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .h2 {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--link-color);
+    }
+}
+
+.price-list-item-list {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 8px 24px;
+}
+
+.price-list-item-list-item {
+    display: grid;
+    grid-template-columns: 108px 1fr 172px;
+    gap: 24px;
+    padding: 8px 0;
+    min-height: 53px;
+    align-items: center;
+    border-bottom: 0.5px solid #C4C5BF;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.price-list-item-list-item-code {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #979085;
+    white-space: nowrap;
+}
+
+.price-list-item-list-item-title {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.price-list-item-list-item-price {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+}
+
+.price-list-item-list-accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (max-width: 720px) {
+    .price-list-item-list-accordion-title .h3 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    .price-list {
+        margin-top: 48px;
+    }
+
+    .price-list-item-list-item {
+        grid-template-columns: 1fr 100px;
+        gap: 0 24px;
+    }
+
+    .price-list-item-list-item-title {
+        grid-column: 1 / 2;
+    }
+
+    .price-list-item-list-item-price {
+        grid-column: 2 / 3;
+        grid-row: 1/3;
+        margin: auto 0;
+    }
+
+
+    .price-list {
+        margin-bottom: 56px;
+    }
+
+    .price-list-section {
+        padding: 0;
+    }
+
+    .price-list-item {
+        gap: 16px;
+
+        .h2 {
+            font-size: 24px;
+            line-height: 120%;
+            padding: 0 var(--def-padding);
+        }
+    }
+
+
+
+    .price-list-item-list {
+        padding: 8px 16px;
+    }
+
+    .price-list-item-list-accordion {
+        padding: 0 16px;
+    }
+
+    .price-list-item-list-item {
+        padding: 8px 0;
+    }
+
+    .price-list-item-list-item-code {
+        font-size: 14px;
+    }
+
+    .price-list-item-list-item-title {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .price-list-item-list-item-price {
+        font-size: 16px;
+        line-height: 120%;
+    }
+}
